@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_FORM</title> 
+    <style>
+
+        h1{ 
+            background-color: brown;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            text-align: center;
+        }
+        h2{  
+             color: black;
+            
+        }
+        p{     
+              color:black;
+              
+        }
+               
+             p:hover{ 
+                   color:rgba(0, 26, 255, 0.24);
+                   
+               } 
+               :visited {      
+                        color: rgba(0, 0, 255, 0);
+               }
+               *{
+
+                box-sizing: border-box;
+
+               }
+               body{   
+                   font-family: Verdana, Geneva, Tahoma, sans-serif;
+                   margin: 15px 30px;
+                   font-size: 20px;
+                   padding: 10px;
+                   background: url(rupees.png.png)no-repeat center 500px;
+                   opacity: 0.80;
+                   background-color:wheat;
+
+               }
+               .form{   background-color: rgb(202, 134, 43);
+                         padding: 5px 20px 5px;
+                         border: rgb(38, 197, 197) ;
+                        
+
+               
+               } 
+               input[type="text"] ,
+               input[type="email"] , 
+               input[type="number"] , 
+               input[type="password"],  
+               input[type="date"]  ,
+               select,
+               textarea{    
+                     width: 20%;
+                     padding: 12px;
+                     border: 5px rgb(90, 163, 205);
+
+               }
+               fieldset{
+                   background: color black;
+
+               }
+               input[type="submit"] {  
+                     background-color: teal;
+                     color: white;
+                     padding: 12px 20px;
+                     border: none;
+                     cursor: pointer;
+                     width: 10%;
+                     border-radius: 50px;
+                     
+               }
+               .gender{
+                    width: 10%;                   
+               }
+                    input[ type="submit"] :hover{   background-color: tomato;}
+    </style>
+
+</head>
+
+<body>
+    <form action=""> 
+<h1>Payment_Details </h1> <hr>
+
+<p>  required filleds are followed by *</p> 
+<h2>Contact Information</h2>
+
+<p> Name:*<input type="text" name="name"  placeholder=" name"> </p>
+<fieldset>
+    <legend>GENDER *</legend>
+<p>
+    Male <input type="radio" name="gender" id="name"required>
+    Female <input type="radio" name="gender" id="name"required>
+</p>
+</fieldset>
+<p>Adderss: <textarea name="adderss" id=" adderess" cols="100" rows="10" > </textarea>
+</p>
+<hr>
+<p> *EMAIL:<input type="email" name="email" id="email" placeholder="xyz.@gmail.com"></p> <hr>
+<p> *Pincode:<input type="number" name="number" id="number" placeholder=" 123456" required></p>
+<hr>
+<h2>For_Payment</h2>
+<p>* Card Type:
+
+    <select  name="card_tpye" id="card tpye"> required
+        <option value=" ">--Select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="Master card">master card</option>
+        <option value="Rupay"> Rupay</option>
+    </select>
+</p>
+<p> card Number*: <input type="number" name=" Card-number" id=" card-number" placeholder="111-222-333-444"
+    required></p>
+<p> card expire*: <input type="date" name="expire date" id=" expire date"required></p>
+<p>CVV*:<input type="password" name="cvv" id="cvv"required placeholder="456"></p>
+<input type="submit" value="paynow">
+
+</form>
+<div class="background"></div>
+</body>
+</html>
